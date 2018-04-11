@@ -3,7 +3,7 @@ var firstQuestion = parseInt(prompt('Escribe 1 si quieres cifrar una palabra y 2
 
 
 if (firstQuestion === 1) {
-  // Se le pedirá al usuario palabra a cifrar, nota: debe cumplir las condiciones ingresar palabra que no sea número y el usuario no podrá ingresar un campo vacio.
+  // Si selecciona la primera opción se le pedirá al usuario palabra a cifrar, nota: debe cumplir las condiciones ingresar palabra que no sea número y el usuario no podrá ingresar un campo vacio.
 
   var enterPhrase = prompt('Ingresa la palabra a cifrar **Solamente texto** ');
 
@@ -12,6 +12,7 @@ if (firstQuestion === 1) {
   var asciiLowerCase_a = 97;
   var asciiLowerCase_z = 122;
 
+//Se crea funcion validateEnterPhrase para validar las condiciones iniciales.
   function validateEnterPhrase(enterPhrase) {
   while (enterPhrase == '') {
     enterPhrase = prompt ('Ingrese una cadena valida');
@@ -62,6 +63,7 @@ if (firstQuestion === 1) {
   var asciiLowerCase_a = 97;
   var asciiLowerCase_z = 122;
 
+//Se crea funcion validateEnterPhrase para validar las condiciones iniciales.
   function validateEnterPhrase(enterPhrase) {
   while (enterPhrase == '') {
     enterPhrase = prompt ('Ingrese una cadena valida');
