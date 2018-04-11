@@ -53,6 +53,9 @@ if (firstQuestion === 1) {
   } //Se cierra la function cipher
   alert (cipher(enterPhraseToUpperCase));
   // } De abajo cierra if(firstQuestion === 1) general
+  var cipherResult = document.getElementById('Result');
+  cipherResult.innerHTML = cipher(enterPhraseToUpperCase);
+
 } else if (firstQuestion === 2) {
   // Se le pedirá al usuario palabra a cifrar, nota: debe cumplir las condiciones ingresar palabra que no sea número y el usuario no podrá ingresar un campo vacio.
 
@@ -102,6 +105,8 @@ if (firstQuestion === 1) {
   } //Se cierra function decipher
   alert(decipher(enterPhraseToUpperCase));
   // } de abajo se cierra el else if (firstQuestion === 2)
+  var decipherResult = document.getElementById('Result2');
+  decipherResult.innerHTML = decipher(enterPhraseToUpperCase);
 } else {
   alert('Vuelve a intentarlo respetando los criterios que se señalan.');
 }
